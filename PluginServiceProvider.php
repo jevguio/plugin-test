@@ -13,6 +13,8 @@ class PluginServiceProvider extends ServiceProvider
         include __DIR__ . '/routes/web.php';
 
         // Register a dashboard button
+        
+        PluginHook::registerPlugin('Test Plugin','1.0.2',' Testing Plugin Developent.','https://github.com/jevguio/plugin-test.git');
         PluginHook::addDashboardButton(
             '<a href="/hello-plugin" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
                 Go to Hello Plugin
