@@ -1,5 +1,5 @@
 {
-    "name": "HelloWorld",
+    "name": "plugin-test-main",
     "enabled": true,
-    "provider": "Plugins\\HelloWorld\\PluginServiceProvider"
+    "provider": "Plugins\\plugin-test-main\\PluginServiceProvider"
   }
