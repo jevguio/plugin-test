@@ -1,0 +1,5 @@
+{
+    "name": "HelloWorld",
+    "enabled": true,
+    "provider": "Plugins\\HelloWorld\\PluginServiceProvider"
+  }
