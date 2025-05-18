@@ -17,8 +17,8 @@ class PluginServiceProvider extends ServiceProvider
             $data = json_decode(file_get_contents($jsonPath), true);
 
             PluginHook::registerPlugin(
+                $data['title'] ?? 'Unknown',
                 $data['name'] ?? 'Unknown',
-                basename(dirname(__DIR__)), // or $data['slug'] if you have it
                 $data['version'] ?? '0.0.0',
                 $data['description'] ?? '',
                 $data['gitUrl'] ?? ''
