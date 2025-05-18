@@ -14,8 +14,8 @@ class PluginServiceProvider extends ServiceProvider
 
         // Register a dashboard button
         
-        PluginHook::registerPlugin('Test Plugin','1.0.2',' Testing Plugin Developent.','https://github.com/jevguio/plugin-test.git');
-        PluginHook::addDashboardButton(
+        PluginHook::registerPlugin('Test Plugin','HelloWorld','1.0.2',' Testing Plugin Developent.','https://github.com/jevguio/plugin-test.git');
+        PluginHook::addTopMenu(
             '<a href="/hello-plugin" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
                 Go to Hello Plugin
             </a>'
